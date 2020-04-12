@@ -1,6 +1,5 @@
 const SHA256 = require('crypto-js/sha256');
-
-const DIFFICULTY = 4;
+const { DIFFICULTY } =  require('../config');
 
 class Block {
     // Stablish values for a block
@@ -49,8 +48,8 @@ class Block {
     }
 
     static blockHash(block) {
-        const { timeStamp, lastHash, data } = block;
-        return Block.hash(timeStamp, lastHash, data);
+        const { timeStamp, lastHash, data, nonce } = block;
+        return Block.hash(timeStamp, lastHash, data, nonce);
     }
 }
 
