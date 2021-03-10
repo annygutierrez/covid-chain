@@ -19,7 +19,7 @@
   "dependencies": {
     "body-parse": "^0.1.0",
     "crypto-js": "^4.0.0",
-    "elliptic": "^6.5.2",
+    "elliptic": "^6.5.4",
     "express": "^4.17.1",
     "ws": "^7.2.3"
   }
